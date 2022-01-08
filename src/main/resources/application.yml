@@ -1,0 +1,42 @@
+server:
+  port: ${SERVER_PORT:8800}
+spring:
+  application:
+    name: hoo-blackwatch
+#  datasource:
+#    url: jdbc:mysql://10.240.3.140:12806/energy_data_service?serverTimezone=UTC&useSSL=false&characterEncoding=utf8
+#    username: admin
+#    password: QXV0ZWxFbmUqIw==
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  rabbitmq:
+#    host: 10.240.3.153
+#    port: 5672
+#    username: admin
+#    password: admin
+#    virtual-host: /dev
+#    listener:
+#      simple:
+#        acknowledge-mode: manual
+#  redis:
+#    cluster:
+#      nodes: 10.240.3.139:6371
+#      max-redirects: 5
+#    password: autel*123
+#    timeout: 10000
+#    database: 0
+#    lettuce:
+#      pool:
+#        max-active: 8
+#        max-wait: -1
+#        max-idle: 8
+#        min-idle: 1
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 500MB
+
+hoo:
+  kuwl-url: https://kdwlcxf.market.alicloudapi.com/kdwlcx
+  kuwl-key: 204026793
+  kuwl-secret: TTrMuFXllglLsp9p0B6hjB7p7AnLcqNl
+  kuwl-code: 25113fe2c49b46b59939e053b058b302
